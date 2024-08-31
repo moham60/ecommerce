@@ -1,0 +1,98 @@
+
+
+header{
+    background: unset;
+    background-color: var(--bodyFont);
+    color: var(--white);
+    
+
+  
+}
+header  .flex{
+    & .links .cart{
+        background-color: var(--bodyFont );
+    }
+   
+    & .links >a:not(.cart):hover, & .links .cart:hover{
+        border: 1px solid var(--white);
+        padding: 1rem 1.2rem 1rem 1rem;
+    }
+  
+}
+.card{
+    background-color: white;
+    box-shadow: 0 0 10px #ddd ;
+text-align: center;
+width: 80%;
+margin: 10px auto;
+padding-bottom: 10px;
+& img{
+    width: 250px;
+    max-width: 100%;
+}
+
+
+& .flex{
+    justify-content: space-between;
+    padding: 10px;
+    
+    & span{
+        margin: 0 18px;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+  
+    & .price{
+        color: var(--redColor);
+    }
+
+}
+}
+@media (min-width:992px){
+    .card{
+        display: flex;
+        
+    }
+}
+@media (max-width:468px){
+    .card .flex span{
+        font-size: 0.9rem;
+        margin: 0 4px;
+    }
+    .card{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+}
+.text{
+    & p{
+        text-align:start;
+        margin: 0 18px;
+        padding-block: 20px;
+        line-height: 1.6;
+        color: #888;
+    }
+}
+.add-to-cart{
+    text-align: start;
+    margin: 20px 18px;
+    background-color:rgb(39, 39, 255);
+    width: fit-content;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    & i{
+        margin-right: 10px;
+    }
+    
+}
+.add-to-cart:hover{
+    transform: scale(1.2);
+}
+
+
+

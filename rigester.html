@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigester</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="shortcut icon"
+      href="./fontawesome-free-6.5.1-desktop/svgs/solid/bag-shopping-solid.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <style>
+    body {
+      height: 100vh;
+    }
+    .form {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container2 {
+      width: 92%;
+    }
+  </style>
+  <body class="bg-dark text-white">
+    <header style="background-image: none">
+      <div class="container">
+        <div class="flex">
+          <div class="logo text-center">
+            <a href="ecommerce.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+            AWU
+            <span>Shopping</span>
+          </div>
+          <div class="links">
+            <a href="cart.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i> $0.00</a
+            >
+            <a href="signIn.html" class="signIn"
+              ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+            >
+            <a href="rigester.html" class="rigester"
+              ><i class="fa-solid fa-user-plus"></i>Rigester</a
+            >
+            <button id="dark"><i class="fa-solid fa-moon"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="form m-auto" style="max-width: 500px">
+      <form class="container2">
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-4">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1" />
+        </div>
+        <div class="mb-4 form-check flex">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            style="margin-top: 0"
+            id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Create Account</button>
+      </form>
+    </div>
+    <script>
+      let darkMode = document.getElementById("dark");
+      let moonIcoon = document.getElementsByClassName("fa-moon")[0];
+
+      darkMode.addEventListener("click", function () {
+        document.body.classList.toggle("bg-white");
+        document.body.classList.toggle("text-dark");
+        moonIcoon.classList.toggle("fa-solid");
+        moonIcoon.classList.add("fa-regular");
+      });
+    </script>
+  </body>
+</html>

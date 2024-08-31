@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Details</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./fontawesome-free-6.5.1-desktop/svgs/solid/bag-shopping-solid.svg" />
+    <link rel="stylesheet" href="product-details.css" />
+  </head>
+  <body
+    style="
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      align-items: center;
+    ">
+    <header style="background-image: none">
+      <div class="container">
+        <div class="flex">
+          <div class="logo text-center">
+            <a href="ecommerce.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+            AWU
+            <span>Shopping</span>
+          </div>
+          <div class="links">
+            <a href="cart.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i> $0.00</a
+            >
+            <a href="signIn.html" class="signIn"
+              ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+            >
+            <a href="rigester.html" class="rigester"
+              ><i class="fa-solid fa-user-plus"></i>Rigester</a
+            >
+            <button id="dark"><i class="fa-solid fa-moon"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main style="width: 80%; margin: 0 auto">
+      <div class="card">
+        <img
+          src="./asset/t-shirts-HTML-CSS-Ecommerce-website/images/4.webp"
+          alt="" />
+
+        <div class="text">
+          <div class="flex">
+            <h2>Product Title</h2>
+            <span class="price">$25</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            totam temporibus voluptatum quod impedit voluptate commodi doloribus
+            distinctio animi, error tenetur inventore iste provident porro
+            explicabo, expedita debitis. Repellendus, saepe.
+          </p>
+          <div class="add-to-cart">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Designed and developed by <span>Mohamed Abdelwahab </span> &copy;
+    </footer>
+    <script>
+      let darkMode = document.getElementById("dark");
+      let moonIcoon = document.getElementsByClassName("fa-moon")[0];
+
+      darkMode.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        moonIcoon.classList.toggle("fa-solid");
+        moonIcoon.classList.add("fa-regular");
+      });
+    </script>
+  </body>
+</html>
